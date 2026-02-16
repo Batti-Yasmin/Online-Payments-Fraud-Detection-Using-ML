@@ -37,10 +37,13 @@ The architecture separates UI, backend logic, and ML model into independent laye
 ------
 
 Streamlit Web App (Frontend / UI)
+
             ⬇
       Python Backend Logic
+      
             ⬇
    Trained Random Forest Model
+   
             ⬇
        Fraud Prediction Output
 
@@ -51,10 +54,15 @@ Streamlit Web App (Frontend / UI)
 
 online-payments-fraud-detection/
 │
-├── app.py                  
+
+├── app.py      
+
 ├── fraud_detection_model.pkl 
-├── scaler.pkl              
-├── requirements.txt        
+
+├── scaler.pkl
+
+├── requirements.txt 
+
 ├── README.md              
 
 -------------------
