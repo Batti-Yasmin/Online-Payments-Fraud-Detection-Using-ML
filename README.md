@@ -5,13 +5,13 @@ A machine learning web application that detects fraudulent online payment transa
 
 Built using:
 
-Streamlit (Frontend & Deployment)
+- Streamlit (Frontend & Deployment)
 
-Python (Backend & ML Model)
+- Python (Backend & ML Model)
 
-Random Forest Classifier
+- Random Forest Classifier
 
-PaySim Financial Fraud Dataset.
+- PaySim Financial Fraud Dataset.
 
 ----------------------
 🚀 Project Overview
@@ -24,11 +24,11 @@ This system predicts whether a financial transaction is:
 
 It also provides:
 
-Fraud probability score
+- Fraud probability score
 
-Risk classification (Low / Medium / High)
+- Risk classification (Low / Medium / High)
 
-Real-time prediction via web app
+- Real-time prediction via web app
 
 The architecture separates UI, backend logic, and ML model into independent layers.
 
@@ -37,11 +37,17 @@ The architecture separates UI, backend logic, and ML model into independent laye
 ------
 
 Streamlit Web App (Frontend / UI)
+
             ⬇
+            
       Python Backend Logic
+      
             ⬇
+            
    Trained Random Forest Model
+   
             ⬇
+            
        Fraud Prediction Output
 
 ----------------
@@ -49,11 +55,16 @@ Streamlit Web App (Frontend / UI)
 -------
 
 online-payments-fraud-detection/
+
 │
-├── app.py                  
+├── app.py    
+
 ├── fraud_detection_model.pkl 
-├── scaler.pkl              
-├── requirements.txt        
+
+├── scaler.pkl      
+
+├── requirements.txt    
+
 ├── README.md              
         
 -------------------
@@ -64,19 +75,19 @@ Dataset Used: PaySim Synthetic Financial Dataset
 
 Features:
 
-step
+- step
 
-amount
+- amount
 
-oldbalanceOrg
+- oldbalanceOrg
 
-newbalanceOrig
+- newbalanceOrig
 
-oldbalanceDest
+- oldbalanceDest
 
-newbalanceDest
+- newbalanceDest
 
-isFraud
+- isFraud
 
 Fraud detection is highly imbalanced, handled using:
 
@@ -90,24 +101,24 @@ Model Used: Random Forest Classifier
 
 Techniques Applied:
 
-Data sampling (200k rows for efficient training)
+- Data sampling (200k rows for efficient training)
 
-One-hot encoding
+- One-hot encoding
 
-Stratified train-test split
+- Stratified train-test split
 
-Class imbalance handling
+- Class imbalance handling
 
-ROC-AUC evaluation
+- ROC-AUC evaluation
 
-Probability-based risk scoring
+- Probability-based risk scoring
 
                
-Sample Performance
+Sample Performance:
 
-ROC-AUC ≈ 0.96
+- ROC-AUC ≈ 0.96
 
-Fraud Recall ≈ 0.76
+- Fraud Recall ≈ 0.76
 
 -----------------------------
 ⚙️ Setup Instructions
@@ -124,9 +135,9 @@ streamlit run app.py
 
 3️⃣ ML Service / Model
 
-fraud_detection_model.pkl 
+- fraud_detection_model.pkl 
 
-scaler.pkl
+- scaler.pkl
                
 User Input → Scaler → Random Forest Model → Fraud Prediction → Output on Streamlit
 
@@ -134,65 +145,65 @@ User Input → Scaler → Random Forest Model → Fraud Prediction → Output on
  📈 Risk Classification Logic
  ----
  
-Probability ≥ 0.8 → High Risk
+- Probability ≥ 0.8 → High Risk
 
-0.5 ≤ Probability < 0.8 → Medium Risk
+- 0.5 ≤ Probability < 0.8 → Medium Risk
 
-< 0.5 → Low Risk
+- < 0.5 → Low Risk
 
 -----------------------------
 💡 Key Features
 ------
 
-Real-time Fraud Prediction
+- Real-time Fraud Prediction
 
-Probability-Based Scoring 
+- Probability-Based Scoring 
 
-Modular Architecture 
+- Modular Architecture 
 
-Safe Model Loading 
+- Safe Model Loading 
 
-Clean and Interactive UI
+- Clean and Interactive UI
 
-Backend-ML Integration
+- Backend-ML Integration
 
-Production-Ready Structure
+- Production-Ready Structure
 
 ---------------------------
 🛠️ Technologies Used
 ------
 
-Frontend / UI
+Frontend / UI:
 
-Streamlit 
+- Streamlit 
 
-Machine Learning / Backend
+Machine Learning / Backend:
 
-Python 3.10.2 
-Pandas 
-NumPy 
-Scikit-learn 
-Joblib 
+- Python 3.10.2 
+- Pandas 
+- NumPy 
+- Scikit-learn 
+- Joblib 
 
-Other Tools
+Other Tools:
                
-Git / GitHub 
-Streamlit Cloud 
+- Git / GitHub 
+- Streamlit Cloud 
 
 -------------------------------------              
 🎯 Future Improvements
  ------
  
-Replace Random Forest with XGBoost
+- Replace Random Forest with XGBoost
 
-Add MongoDB transaction storage
+- Add MongoDB transaction storage
 
-Add user authentication (JWT)
+- Add user authentication (JWT)
 
-Add dashboard analytics
+- Add dashboard analytics
 
-Deploy to cloud (Render + Vercel)
+- Deploy to cloud (Render + Vercel)
 
-Docker containerization
+- Docker containerization
 
 
