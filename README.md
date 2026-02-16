@@ -31,10 +31,13 @@ The architecture separates UI, backend logic, and ML model into independent laye
  🏗️ Architecture
 
 Streamlit Web App (Frontend / UI)
+
 ⬇
 Python Backend Logic
+
 ⬇
 Trained Random Forest Model
+
 ⬇
 Fraud Prediction Output
 
