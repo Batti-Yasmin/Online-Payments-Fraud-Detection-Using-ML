@@ -8,7 +8,7 @@ Streamlit (Frontend & Deployment)
 Python (Backend & ML Model)
 Random Forest Classifier
 PaySim Financial Fraud Dataset.
-
+-----
 🚀 Project Overview
 
 This system predicts whether a financial transaction is:
@@ -23,7 +23,7 @@ Risk classification (Low / Medium / High)
 Real-time prediction via web app
 
 The architecture separates UI, backend logic, and ML model into independent layers.
-
+-----
 🏗️ Architecture
 
 Streamlit Web App (Frontend / UI)
@@ -33,8 +33,7 @@ Streamlit Web App (Frontend / UI)
    Trained Random Forest Model
             ⬇
        Fraud Prediction Output
-
-
+-----
 📂 Project Structure
 
 online-payments-fraud-detection/
@@ -44,6 +43,7 @@ online-payments-fraud-detection/
 ├── scaler.pkl              
 ├── requirements.txt        
 ├── README.md              
+----         
 
 📊 Dataset
 
@@ -62,7 +62,7 @@ isFraud
 Fraud detection is highly imbalanced, handled using:
 
 class_weight = "balanced"
-
+-----
 🧠 Machine Learning Model
 
 Model Used: Random Forest Classifier
@@ -80,6 +80,7 @@ Sample Performance
 ROC-AUC ≈ 0.96
 Fraud Recall ≈ 0.76
 
+-----
 ⚙️ Setup Instructions
 ️
 1️⃣ Install Python & Dependencies
@@ -95,13 +96,14 @@ fraud_detection_model.pkl
 scaler.pkl
                
 User Input → Scaler → Random Forest Model → Fraud Prediction → Output on Streamlit
-               
+ ------              
  📈 Risk Classification Logic
                
 Probability ≥ 0.8 → High Risk
 0.5 ≤ Probability < 0.8 → Medium Risk
 < 0.5 → Low Risk
 
+-------
 💡 Key Features
 
 Real-time Fraud Prediction
@@ -112,6 +114,7 @@ Clean and Interactive UI
 Backend-ML Integration 
 Production-Ready Structure
 
+-----
 🛠️ Technologies Used
                
 Frontend / UI
@@ -129,8 +132,9 @@ Joblib
 Other Tools
                
 Git / GitHub 
-Streamlit Cloud             
-               
+Streamlit Cloud 
+
+ ------              
 🎯 Future Improvements
                
 Replace Random Forest with XGBoost
