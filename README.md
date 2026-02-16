@@ -55,8 +55,8 @@ Fraud Prediction Output
 -------
 
 online-payments-fraud-detection/
-
 │
+
 ├── app.py
 
 ├── fraud_detection_model.pkl
