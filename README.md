@@ -26,6 +26,7 @@ Real-time prediction via web app
 
 The architecture separates UI, backend logic, and ML model into independent layers.
 
+----------------
 🏗️ Architecture
 ------
 
@@ -37,7 +38,7 @@ Streamlit Web App (Frontend / UI)
             ⬇
        Fraud Prediction Output
 
-
+----------------
 📂 Project Structure
 -------
 
@@ -49,7 +50,7 @@ online-payments-fraud-detection/
 ├── requirements.txt        
 ├── README.md              
         
-
+-------------------
 📊 Dataset
 ------
 
@@ -69,6 +70,7 @@ Fraud detection is highly imbalanced, handled using:
 
 class_weight = "balanced"
 
+---------------------------
 🧠 Machine Learning Model
 -----
 
@@ -87,6 +89,7 @@ Sample Performance
 ROC-AUC ≈ 0.96
 Fraud Recall ≈ 0.76
 
+-----------------------------
 ⚙️ Setup Instructions
 ------
 
@@ -103,7 +106,8 @@ fraud_detection_model.pkl
 scaler.pkl
                
 User Input → Scaler → Random Forest Model → Fraud Prediction → Output on Streamlit
-              
+
+---------------------              
  📈 Risk Classification Logic
  ----
  
@@ -111,7 +115,7 @@ Probability ≥ 0.8 → High Risk
 0.5 ≤ Probability < 0.8 → Medium Risk
 < 0.5 → Low Risk
 
-
+-----------------------------
 💡 Key Features
 ------
 
@@ -123,7 +127,7 @@ Clean and Interactive UI
 Backend-ML Integration 
 Production-Ready Structure
 
-
+---------------------------
 🛠️ Technologies Used
 ------
 
@@ -144,7 +148,7 @@ Other Tools
 Git / GitHub 
 Streamlit Cloud 
 
-              
+-------------------------------------              
 🎯 Future Improvements
  ------
  
